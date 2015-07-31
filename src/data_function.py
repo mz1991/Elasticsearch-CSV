@@ -13,7 +13,7 @@ def create_bulk_data(csv_lines,csv_header,index_name,type_name):
           "index": {
             "_index": index_name, 
             "_type": type_name, 
-            "_id": id_index
+            "_id": data_dict["Id"]
           }
       }
       bulk_data.append(op_dict)
